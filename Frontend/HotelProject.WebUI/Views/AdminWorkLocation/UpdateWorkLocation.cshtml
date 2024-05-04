@@ -1,0 +1,24 @@
+﻿@model UpdateWorkLocationDto
+@{
+    ViewData["Title"] = "UpdateWorkLocation";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <input type="hidden" asp-for="WorkLocationID" />
+    <div class="form-group">
+        <label>Lokasyon Adı</label>
+        <input type="text" asp-for="WorkLocationName" class="form-control" />
+    </div>
+    <br />
+    <div class="form-group">
+        <label>Şehir</label>
+        <input type="text" asp-for="WorkLocationCity" class="form-control" />
+    </div>
+    <br />
+    <button class="btn btn-success">Lokasyonu Güncelle</button>
+</form>
+
+
+
+

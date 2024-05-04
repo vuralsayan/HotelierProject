@@ -1,0 +1,56 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<vc:_head-partial />
+
+<body>
+    <div class="container-xxxl bg-white p-0">
+        <!-- Spinner Start -->
+        <vc:_spinner-partial />
+        <!-- Spinner End -->
+        <!-- Header Start -->
+        <vc:_navbar-partial />
+        <!-- Header End -->
+        <!-- Carousel Start -->
+        <vc:_slider-partial />
+        <!-- Carousel End -->
+        <!-- Booking Start -->
+        @* <vc:_reservation-partial /> *@
+        <!-- Booking End -->
+        <!-- About Start -->
+        <vc:_about-us-partial />
+        <!-- About End -->
+        <!-- Room Start -->
+        <vc:_our-rooms-partial />
+        <!-- Room End -->
+        <!-- Video Start -->
+        <vc:_trailer-partial />
+        <!-- Video End -->
+        <!-- Service Start -->
+        <vc:_service-partial />
+        <!-- Service End -->
+        <!-- Testimonial Start -->
+        <vc:_testimonial-partial />
+        <!-- Testimonial End -->
+        <!-- Team Start -->
+        <vc:_team-partial />
+        <!-- Team End -->
+        <!-- Newsletter Start -->
+        <partial name="/Views/Default/_SubscribePartial.cshtml" />
+        <!-- Newsletter Start -->
+        <!-- Footer Start -->
+        <vc:_footer-partial />
+        <!-- Footer End -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <vc:_script-partial />
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<vc:_head-partial />
+
+<body>
+    <div class="container-xxxl bg-white p-0">
+
+        <vc:_spinner-partial />
+
+        <vc:_navbar-partial />
+
+        <vc:_booking-cover-partial />
+
+        <partial name="/Views/Booking/AddBooking.cshtml" />
+
+        <partial name="/Views/Default/_SubscribePartial.cshtml" />
+
+        <vc:_footer-partial />
+
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <vc:_script-partial />
+</body>
+
+</html>

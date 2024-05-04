@@ -1,0 +1,33 @@
+﻿@model InboxContactDto
+@{
+    ViewData["Title"] = "MessageDetailsByInbox";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<div class="email-left-box">
+    <a href="/AdminContact/AddSendMessage/" class="btn btn-primary btn-block">Yeni Mesaj Oluştur</a>
+    <partial name="SidebarAdminContactPartial" />
+    <partial name="SidebarAdminContactCategoryPartial" />
+</div>
+<div class="email-right-box">
+    <div role="toolbar" class="toolbar">
+    </div>
+    <div class="read-content">
+        <div class="media pt-5">
+            <img class="mr-3 rounded-circle" src="~/adminweb/images/avatar/1.jpg">
+            <div class="media-body">
+                <h5 class="m-b-3">@Model.Name</h5>
+                <p class="m-b-2">@(((DateTime)Model.Date).ToString("dd-MM-yyy"))</p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="media mb-4 mt-1">
+            <div class="media-body">
+                <h4 class="m-0 text-primary">@Model.Subject</h4><small class="text-muted">Mail: @Model.Mail</small>
+            </div>
+        </div>
+        <p>@Model.Message </p>
+        <hr>
+    </div>
+</div>

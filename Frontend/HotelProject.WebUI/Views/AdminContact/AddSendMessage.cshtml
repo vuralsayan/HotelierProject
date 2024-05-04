@@ -1,0 +1,84 @@
+﻿@model CreateSendMessageDto
+@{
+    ViewData["Title"] = "AddSendMessage";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+
+<div class="email-left-box">
+    <a href="email-compose.html" class="btn btn-primary btn-block">Yeni Mesaj Oluştur</a>
+    <partial name="SidebarAdminContactPartial" />
+    <partial name="SidebarAdminContactCategoryPartial" />
+</div>
+<div class="email-right-box">
+    <div class="toolbar" role="toolbar">
+        <div class="btn-group m-b-20">
+            <button type="button" class="btn btn-light">
+                <i class="fa fa-archive"></i>
+            </button>
+            <button type="button" class="btn btn-light">
+                <i class="fa fa-exclamation-circle"></i>
+            </button>
+            <button type="button" class="btn btn-light">
+                <i class="fa fa-trash"></i>
+            </button>
+        </div>
+        <div class="btn-group m-b-20">
+            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-folder"></i>  <b class="caret m-l-5"></b>
+            </button>
+            <div class="dropdown-menu">
+                @* <span class="dropdown-header">Taşı</span> *@
+                <a class="dropdown-item" href="javascript: void(0);">Sosyal</a>
+                <a class="dropdown-item" href="javascript: void(0);">Promosyon</a>
+                <a class="dropdown-item" href="javascript: void(0);">Güncelleme</a>
+                <a class="dropdown-item" href="javascript: void(0);">Forum</a>
+            </div>
+        </div>
+        <div class="btn-group m-b-20">
+            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-tag"></i>  <b class="caret m-l-5"></b>
+            </button>
+            <div class="dropdown-menu">
+                @* <span class="dropdown-header">Kategoriler:</span> *@
+                <a class="dropdown-item" href="javascript: void(0);">Güncelleme</a>
+                <a class="dropdown-item" href="javascript: void(0);">Sosyal</a>
+                <a class="dropdown-item" href="javascript: void(0);">Promosyon</a>
+                <a class="dropdown-item" href="javascript: void(0);">Forum</a>
+            </div>
+        </div>
+        <div class="btn-group m-b-20">
+            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                Daha fazla <span class="caret m-l-5"></span>
+            </button>
+            <div class="dropdown-menu">
+                @* <span class="dropdown-header">Daha fazlası :</span> *@
+                <a class="dropdown-item" href="javascript: void(0);">Mark as Unread</a>
+                <a class="dropdown-item" href="javascript: void(0);">Add to Tasks</a>
+                <a class="dropdown-item" href="javascript: void(0);">Add Star</a>
+                <a class="dropdown-item" href="javascript: void(0);">Mute</a>
+            </div>
+        </div>
+    </div>
+    <div class="compose-content mt-5">
+        <form method="post" asp-controller="AdminContact" asp-action="AddSendMessage">
+            <div class="form-group">
+                <input type="text" asp-for="ReceiverMail" class="form-control bg-transparent" placeholder=" Alıcı Mail Adresi">
+            </div>
+            <div class="form-group">
+                <input type="text" asp-for="ReceiverName" class="form-control bg-transparent" placeholder=" Alıcı Adı Soyadı">
+            </div>
+            <div class="form-group">
+                <input type="text" asp-for="Title" class="form-control bg-transparent" placeholder=" Konu">
+            </div>
+            <div class="form-group">
+                <textarea asp-for="Content" class="textarea_editor form-control bg-light" rows="15" placeholder="Mesajınızı yazınız ..."></textarea>
+            </div>
+            <div class="text-left m-t-15">
+                <button class="btn btn-primary m-b-30 m-t-15 f-s-14 p-l-20 p-r-20 m-r-10"><i class="fa fa-paper-plane m-r-5"></i> Gönder</button>
+                <a href="/AdminContact/InBox/" class="btn btn-dark m-b-30 m-t-15 f-s-14 p-l-20 p-r-20"><i class="ti-close m-r-5 f-s-12"></i> İptal</a>
+            </div>
+        </form>
+    </div>
+</div>
+

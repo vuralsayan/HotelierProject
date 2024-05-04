@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<vc:_dashboard-head-partial />
+
+<div class="container-fluid mt-3">
+
+    <vc:_dashboard-widget-partial />
+
+    <vc:_dashboard-last4-staff-list-partial />
+
+    <vc:_dashboard-last6-bookings-partial />
+
+    <vc:_dashboard-subscribe-count-partial />
+    
+</div>
+
+<vc:_dashboard-script-partial />
