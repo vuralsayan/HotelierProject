@@ -10,7 +10,7 @@
 <p align="center">
   <a href="#hakkında">Hakkında</a> •
   <a href="#nasıl-kullanılır">Nasıl Kullanılır</a> •
-  <a href="#download">Görseller</a> •
+  <a href="#görseller">Görseller</a> •
 </p>
 
 
@@ -33,8 +33,28 @@ $ add-migration & update database
 
 # Önce api projesini sonra UI projesini çalıştırıp kullanabilirsiniz
 ```
-
 ---
+
+## Görseller
+![](https://raw.githubusercontent.com/vuralsayan/HotelierProject/master/Images/1.png)
+![](https://raw.githubusercontent.com/vuralsayan/HotelierProject/master/Images/2.png)
+![](https://raw.githubusercontent.com/vuralsayan/HotelierProject/master/Images/3.png)
+![](https://raw.githubusercontent.com/vuralsayan/HotelierProject/master/Images/4.png)
+![](https://raw.githubusercontent.com/vuralsayan/HotelierProject/master/Images/5.png)
+![](https://raw.githubusercontent.com/vuralsayan/HotelierProject/master/Images/6.png)
+![](https://raw.githubusercontent.com/vuralsayan/HotelierProject/master/Images/7.png)
+![](https://raw.githubusercontent.com/vuralsayan/HotelierProject/master/Images/8.png)
+![](https://raw.githubusercontent.com/vuralsayan/HotelierProject/master/Images/9.png)
+![](https://raw.githubusercontent.com/vuralsayan/HotelierProject/master/Images/10.png)
+![](https://raw.githubusercontent.com/vuralsayan/HotelierProject/master/Images/11.png)
+![](https://raw.githubusercontent.com/vuralsayan/HotelierProject/master/Images/12.png)
+![](https://raw.githubusercontent.com/vuralsayan/HotelierProject/master/Images/13.png)
+![](https://raw.githubusercontent.com/vuralsayan/HotelierProject/master/Images/swagger.png)
+
+
+ 
+ 
+
 
 > [vuralsayan.com](https://www.vuralsayan.com) &nbsp;&middot;&nbsp;
 > GitHub [@vuralsayan](https://github.com/vuralsayan) &nbsp;&middot;&nbsp;
